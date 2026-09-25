@@ -18,7 +18,7 @@ export const STUDIO = {
    Each line below: replace image URL with your photo, edit price. */
 export const PRODUCTS = [
   // ----- NIGERIAN STYLES (15) — replace image URL with your photo, edit price -----
-  { id: "n01", name: "Aso Ebi Royale",           category: "Aso Ebi",          origin: "nigerian", price: 85000,  image: "https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?q=80&w=800&auto=format&fit=crop" },
+  { id: "n01", name: "Elegant Lilac Peplum Top & Palazzo Trouser Set", category: "Aso Ebi",          origin: "nigerian", price: 25000,  image: "./images/lilac-peplum-palazzo.jpg" },
   { id: "n02", name: "Agbada Oba Prime",         category: "Agbada",           origin: "nigerian", price: 145000, image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800&auto=format&fit=crop" },
   { id: "n03", name: "Ankara Flare Gown",        category: "Ankara",           origin: "nigerian", price: 62000,  image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=800&auto=format&fit=crop" },
   { id: "n04", name: "Aso Oke Bridal Set",       category: "Aso Oke",          origin: "nigerian", price: 175000, image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop" },
