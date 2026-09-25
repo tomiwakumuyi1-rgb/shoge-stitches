@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { naira, BRAND_NAME, waLink } from "../lib/site";
+import { useVideoAutoplay } from "../lib/useVideoAutoplay";
 
 /* Accessible product detail dialog with focus trap */
 export default function Lightbox({ product, onClose }) {
@@ -29,6 +30,7 @@ export default function Lightbox({ product, onClose }) {
 
   const p = product;
   const isNg = p.origin === "nigerian";
+  const videoRef = useVideoAutoplay();
 
   return (
     <div className="lightbox is-open" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
@@ -36,7 +38,20 @@ export default function Lightbox({ product, onClose }) {
       <div className="lightbox-panel" ref={panelRef}>
         <button className="lightbox-close" ref={closeRef} onClick={onClose} aria-label="Close details">✕</button>
         <div className="lightbox-media">
-          <img src={p.image} alt={p.name + " — " + p.category + " by " + BRAND_NAME} />
+          {p.video ? (
+            <video
+              ref={videoRef}
+              src={p.video}
+              poster={p.image}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={p.name + " — video by " + BRAND_NAME}
+            />
+          ) : (
+            <img src={p.image} alt={p.name + " — " + p.category + " by " + BRAND_NAME} />
+          )}
         </div>
         <div className="lightbox-body">
           <p className="eyebrow">{isNg ? "Nigerian Styles" : "Foreign Styles"}</p>

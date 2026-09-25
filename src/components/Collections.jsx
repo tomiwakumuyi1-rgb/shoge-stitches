@@ -1,11 +1,31 @@
 import { useMemo, useState } from "react";
 import { PRODUCTS, naira, BRAND_NAME } from "../lib/site";
+import { useVideoAutoplay } from "../lib/useVideoAutoplay";
 
 const FILTERS = [
   { key: "all", label: "All" },
   { key: "nigerian", label: "Nigerian Styles" },
   { key: "foreign", label: "Foreign Styles" }
 ];
+
+function ProductMedia({ product }) {
+  const videoRef = useVideoAutoplay();
+  if (product.video) {
+    return (
+      <video
+        ref={videoRef}
+        src={product.video}
+        poster={product.image}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label={product.name + " — video by " + BRAND_NAME}
+      />
+    );
+  }
+  return <img loading="lazy" src={product.image} alt={product.name + " — " + product.category + " by " + BRAND_NAME} />;
+}
 
 function ProductCard({ product, index, onOpen }) {
   const isNg = product.origin === "nigerian";
@@ -23,7 +43,7 @@ function ProductCard({ product, index, onOpen }) {
       >
         <figure className="product-media">
           <span className={"origin-tag" + (isNg ? " ng" : "")}>{isNg ? "Nigerian" : "Foreign"}</span>
-          <img loading="lazy" src={product.image} alt={product.name + " — " + product.category + " by " + BRAND_NAME} />
+          <ProductMedia product={product} />
         </figure>
         <div className="product-info">
           <div>

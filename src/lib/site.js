@@ -12,10 +12,12 @@ export const STUDIO = {
   hours: "Mon – Sat · 9:00am – 7:00pm"
 };
 
-/* PRODUCTS — { id, name, category, origin, price, image }
+/* PRODUCTS — { id, name, category, origin, price, image, video? }
    origin: "nigerian" or "foreign"
    price is in Naira (number). Shown as "From ₦X,000".
-   Each line below: replace image URL with your photo, edit price. */
+   Each line below: replace image URL with your photo, edit price.
+   video: optional. Put the clip in public/videos/ and set e.g. video: "./videos/my-clip.mp4"
+   — it autoplays muted + looping in the product card and detail popup. */
 export const PRODUCTS = [
   // ----- NIGERIAN STYLES (15) — replace image URL with your photo, edit price -----
   { id: "n01", name: "Elegant Lilac Peplum Top & Palazzo Trouser Set", category: "Aso Ebi",          origin: "nigerian", price: 25000,  image: "./images/lilac-peplum-palazzo.jpg" },
