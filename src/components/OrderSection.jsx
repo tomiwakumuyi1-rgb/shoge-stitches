@@ -2,8 +2,8 @@ import { useState } from "react";
 import { BRAND_NAME, waLink } from "../lib/site";
 
 const OUTFIT_TYPES = [
-  "Aso Ebi", "Agbada", "Ankara", "Aso Oke", "Lace / Iro & Buba", "Senator",
-  "Wedding Gown", "Evening Gown", "Corporate Suit", "Corset Dress", "Casual Wear", "Not sure yet"
+  "Aso Ebi", "Agbada", "Ankara", "Aso Oke", "Lace / Iro & Buba", "Senator / Kaftan",
+  "Bridal / Traditional Wedding", "Kids Outfit", "Not sure yet"
 ];
 
 const initial = {

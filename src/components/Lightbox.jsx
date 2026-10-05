@@ -29,7 +29,6 @@ export default function Lightbox({ product, onClose }) {
   }, [onClose]);
 
   const p = product;
-  const isNg = p.origin === "nigerian";
   const videoRef = useVideoAutoplay();
 
   return (
@@ -54,15 +53,14 @@ export default function Lightbox({ product, onClose }) {
           )}
         </div>
         <div className="lightbox-body">
-          <p className="eyebrow">{isNg ? "Nigerian Styles" : "Foreign Styles"}</p>
+          <p className="eyebrow">{p.category} · Nigerian Made</p>
           <h3 id="lbTitle">{p.name}</h3>
           <p className="lightbox-desc">
-            A bespoke {p.category.toLowerCase()} piece, cut to your exact measurements{" "}
-            {isNg ? "with hand-finished traditional detailing." : "with couture-grade construction."}
+            A bespoke {p.category.toLowerCase()} piece, cut to your exact measurements with hand-finished Nigerian detailing.
           </p>
           <dl className="lightbox-rows">
             <div className="lightbox-row"><dt>Category</dt><dd>{p.category}</dd></div>
-            <div className="lightbox-row"><dt>Origin</dt><dd>{isNg ? "Nigerian" : "Foreign"}</dd></div>
+            <div className="lightbox-row"><dt>Made</dt><dd>Lagos, Nigeria</dd></div>
             <div className="lightbox-row"><dt>Price</dt><dd><span className="cur">From</span> {naira(p.price)}</dd></div>
             <div className="lightbox-row"><dt>Lead time</dt><dd>2 – 4 weeks</dd></div>
           </dl>

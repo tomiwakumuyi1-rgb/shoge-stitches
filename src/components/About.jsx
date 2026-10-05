@@ -14,8 +14,8 @@ export default function About() {
         <div className="about-media img-reveal" data-parallax="0.12">
           <img
             loading="lazy"
-            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop"
-            alt={"Portrait of the designer at work in the " + BRAND_NAME + " studio"}
+            src="https://images.pexels.com/photos/38030860/pexels-photo-38030860.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            alt={"Nigerian attire with intricate embroidery, crafted by " + BRAND_NAME}
           />
         </div>
         <div className="about-copy">

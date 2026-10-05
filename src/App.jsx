@@ -44,7 +44,7 @@ export default function App() {
       onToggle: (self) => headerRef.current?.classList.toggle("is-solid", self.scroll() > 80)
     });
 
-    document.title = BRAND_NAME + " — Luxury Nigerian & Foreign Fashion";
+    document.title = BRAND_NAME + " — Luxury Nigerian Fashion";
     const cleanupReveals = initReveals(rootRef.current);
     window.addEventListener("load", ScrollTrigger.refresh);
     return () => {

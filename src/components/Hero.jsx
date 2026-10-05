@@ -36,8 +36,8 @@ export default function Hero({ introDone }) {
     <section className="hero" aria-label="Welcome">
       <div className="hero-bg" data-parallax="0.25">
         <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1800&auto=format&fit=crop"
-          alt="Elegant model in a flowing designer outfit against a warm studio backdrop"
+          src="https://images.pexels.com/photos/35405978/pexels-photo-35405978.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          alt="Nigerian men in classic white agbada outfits"
           fetchpriority="high"
         />
       </div>

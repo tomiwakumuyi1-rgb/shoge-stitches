@@ -3,9 +3,13 @@ import { PRODUCTS, naira, BRAND_NAME } from "../lib/site";
 import { useVideoAutoplay } from "../lib/useVideoAutoplay";
 
 const FILTERS = [
-  { key: "all", label: "All" },
-  { key: "nigerian", label: "Nigerian Styles" },
-  { key: "foreign", label: "Foreign Styles" }
+  { key: "all", label: "All Styles" },
+  { key: "Aso Ebi", label: "Aso Ebi" },
+  { key: "Agbada", label: "Agbada" },
+  { key: "Senator", label: "Senator" },
+  { key: "Ankara", label: "Ankara" },
+  { key: "Aso Oke", label: "Aso Oke" },
+  { key: "Lace", label: "Lace" }
 ];
 
 function ProductMedia({ product }) {
@@ -28,11 +32,9 @@ function ProductMedia({ product }) {
 }
 
 function ProductCard({ product, index, onOpen }) {
-  const isNg = product.origin === "nigerian";
   return (
     <li
       className="product-card is-in"
-      data-origin={product.origin}
       style={{ transitionDelay: (index % 8) * 60 + "ms" }}
     >
       <button
@@ -42,7 +44,7 @@ function ProductCard({ product, index, onOpen }) {
         onClick={() => onOpen(product)}
       >
         <figure className="product-media">
-          <span className={"origin-tag" + (isNg ? " ng" : "")}>{isNg ? "Nigerian" : "Foreign"}</span>
+          <span className="origin-tag ng">Nigerian</span>
           <ProductMedia product={product} />
         </figure>
         <div className="product-info">
@@ -61,7 +63,7 @@ function ProductCard({ product, index, onOpen }) {
 export default function Collections({ onOpenProduct }) {
   const [filter, setFilter] = useState("all");
   const visible = useMemo(
-    () => PRODUCTS.filter((p) => filter === "all" || p.origin === filter),
+    () => PRODUCTS.filter((p) => filter === "all" || p.category === filter),
     [filter]
   );
 
@@ -71,7 +73,7 @@ export default function Collections({ onOpenProduct }) {
         <span className="eyebrow">The Atelier</span>
         <h2 className="display h-reveal" data-split>
           <span className="line"><span>Nigerian heritage,</span></span>
-          <span className="line"><span>global couture.</span></span>
+          <span className="line"><span>stitched to fit.</span></span>
         </h2>
       </div>
 
