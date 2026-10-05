@@ -21,7 +21,7 @@ export const STUDIO = {
 export const PRODUCTS = [
   // ----- NIGERIAN STYLES (15) — replace image URL with your photo, edit price -----
   { id: "n01", name: "Elegant Lilac Peplum Top & Palazzo Trouser Set", category: "Aso Ebi",          origin: "nigerian", price: 25000,  image: "./images/lilac-peplum-palazzo.jpg" },
-  { id: "n02", name: "Agbada Oba Prime",         category: "Agbada",           origin: "nigerian", price: 145000, image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800&auto=format&fit=crop" },
+  { id: "n02", name: "Olive Green Luxury Embroidered Native Two-Piece Set", category: "Agbada",           origin: "nigerian", price: 85000,  image: "./images/olive-green-native-two-piece.jpg" },
   { id: "n03", name: "Ankara Flare Gown",        category: "Ankara",           origin: "nigerian", price: 62000,  image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=800&auto=format&fit=crop" },
   { id: "n04", name: "Aso Oke Bridal Set",       category: "Aso Oke",          origin: "nigerian", price: 175000, image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop" },
   { id: "n05", name: "Lace Iro & Buba",          category: "Lace/Iro & Buba",  origin: "nigerian", price: 98000,  image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop" },
