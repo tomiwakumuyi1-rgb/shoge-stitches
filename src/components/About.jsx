@@ -24,8 +24,8 @@ export default function About() {
             <span className="line"><span>Couture with</span></span>
             <span className="line"><span>a Nigerian soul.</span></span>
           </h2>
-          <p>I learned to sew at my grandmother's table in Lagos, where every celebration was measured in fabric. Today, SHOGE STITCHES carries that heritage forward — pairing hand-picked aso oke, lace and ankara with the precision of European couture.</p>
-          <p>Whether it is an agbada for the groom's family or a corseted gown for the reception, one rule never changes: it must fit you, and only you.</p>
+          <p>I learned to sew at my grandmother's table in Lagos, where every celebration was measured in fabric. Today, SHOGE STITCHES is a women-only atelier — pairing hand-picked aso oke, lace and ankara with the precision of European couture, cut for the female silhouette.</p>
+          <p>Whether it is a corseted gown for the reception or aso oke for the traditional wedding, one rule never changes: it must fit you, and only you.</p>
           <span className="about-sign">Shoge</span>
           <div className="about-facts">
             {FACTS.map((f) => (

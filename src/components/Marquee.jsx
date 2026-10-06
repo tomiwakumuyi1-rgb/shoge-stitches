@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap, prefersReduced } from "../lib/motion";
 
-const ITEMS = ["Bridal", "Aso Ebi", "Agbada", "Corporate", "Evening Gowns", "Custom Orders"];
+const ITEMS = ["Bridal", "Aso Ebi", "Trending Now", "Corset Gowns", "Evening Gowns", "Custom Orders"];
 
 /* Seamless infinite marquee, speed reacts to scroll direction */
 export default function Marquee() {

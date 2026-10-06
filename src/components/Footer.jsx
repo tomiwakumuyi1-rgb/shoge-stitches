@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-col">
           <Logo />
           <p style={{ marginTop: "1.2rem", color: "var(--ivory-60)", fontSize: ".9rem", maxWidth: "32ch" }}>
-            Bespoke Nigerian outfits, cut for one body at a time.
+            Bespoke Nigerian fashion for women, cut for one body at a time.
           </p>
         </div>
         <div className="footer-col">

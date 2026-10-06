@@ -33,7 +33,7 @@ export default function Lookbook({ onOpenProduct }) {
     };
   }, []);
 
-  const picks = [PRODUCTS[1], PRODUCTS[9], PRODUCTS[3], PRODUCTS[13], PRODUCTS[8], PRODUCTS[19]];
+  const picks = [PRODUCTS[1], PRODUCTS[7], PRODUCTS[3], PRODUCTS[11], PRODUCTS[18], PRODUCTS[21]]; // featured looks, by catalogue index
   const originLabel = (o) => (o === "nigerian" ? "Nigerian" : "Foreign");
 
   return (

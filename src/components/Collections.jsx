@@ -4,12 +4,12 @@ import { useVideoAutoplay } from "../lib/useVideoAutoplay";
 
 const FILTERS = [
   { key: "all", label: "All Styles" },
+  { key: "Trending", label: "Trending Now" },
   { key: "Aso Ebi", label: "Aso Ebi" },
-  { key: "Agbada", label: "Agbada" },
-  { key: "Senator", label: "Senator" },
+  { key: "Lace", label: "Corset & Lace" },
   { key: "Ankara", label: "Ankara" },
-  { key: "Aso Oke", label: "Aso Oke" },
-  { key: "Lace", label: "Lace" }
+  { key: "Boubou", label: "Boubou & George" },
+  { key: "Bridal", label: "Bridal" }
 ];
 
 function ProductMedia({ product }) {
@@ -72,8 +72,8 @@ export default function Collections({ onOpenProduct }) {
       <div className="sec-head sec-head--center">
         <span className="eyebrow">The Atelier</span>
         <h2 className="display h-reveal" data-split>
-          <span className="line"><span>Nigerian heritage,</span></span>
-          <span className="line"><span>stitched to fit.</span></span>
+          <span className="line"><span>Nigerian fashion,</span></span>
+          <span className="line"><span>for women only.</span></span>
         </h2>
       </div>
 

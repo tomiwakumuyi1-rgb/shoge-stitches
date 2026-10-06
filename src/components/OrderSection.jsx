@@ -2,8 +2,8 @@ import { useState } from "react";
 import { BRAND_NAME, waLink } from "../lib/site";
 
 const OUTFIT_TYPES = [
-  "Aso Ebi", "Agbada", "Ankara", "Aso Oke", "Lace / Iro & Buba", "Senator / Kaftan",
-  "Bridal / Traditional Wedding", "Kids Outfit", "Not sure yet"
+  "Corset / Lace Gown", "Aso Ebi (Owambe)", "Boubou / Kaftan", "George Wrapper Set",
+  "Ankara / Ready-to-Wear", "Bridal / Traditional Wedding", "Gele & Accessories", "Not sure yet"
 ];
 
 const initial = {
@@ -44,7 +44,7 @@ export default function OrderSection() {
             <span className="line"><span>Your outfit,</span></span>
             <span className="line"><span>your measurements.</span></span>
           </h2>
-          <p>Fill in your details and we will continue the conversation on WhatsApp — fabric suggestions, pricing and your fitting date.</p>
+          <p>For women only. Fill in your details and we will continue the conversation on WhatsApp — fabric suggestions, pricing and your fitting date.</p>
           <hr className="gold-rule" />
           <p>Prefer to talk now? <a className="link-line" href={waLink("Hello " + BRAND_NAME + ", I'd like to make an enquiry.")} target="_blank" rel="noopener">Message the studio →</a></p>
         </div>

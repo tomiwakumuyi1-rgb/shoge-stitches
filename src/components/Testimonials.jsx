@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 const SLIDES = [
   {
-    quote: "The agbada fit like it was grown on him. Guests asked who made it before the first dance even started.",
-    name: "Tunde A.",
-    role: "Groom, Lagos"
+    quote: "My aso-ebi lace gown fit like it was poured on me. Guests asked who made it before the first dance even started.",
+    name: "Tolu A.",
+    role: "Aso Ebi Client, Lagos"
   },
   {
     quote: "I sent a Pinterest photo and got something better. The corset gown was the highlight of my whole wedding.",
@@ -12,9 +12,9 @@ const SLIDES = [
     role: "Bride, Abuja"
   },
   {
-    quote: "Five suits in one week for our team — every measurement perfect, delivered a day early. Rare professionalism.",
-    name: "David E.",
-    role: "Corporate Client, Port Harcourt"
+    quote: "Six aso-ebi outfits for my sisters in one week — every measurement perfect, delivered a day early. Rare professionalism.",
+    name: "Chidinma E.",
+    role: "Bridal Train, Port Harcourt"
   }
 ];
 

@@ -36,8 +36,8 @@ export default function Hero({ introDone }) {
     <section className="hero" aria-label="Welcome">
       <div className="hero-bg" data-parallax="0.25">
         <img
-          src="https://images.pexels.com/photos/35405978/pexels-photo-35405978.jpeg?auto=compress&cs=tinysrgb&w=1800"
-          alt="Nigerian men in classic white agbada outfits"
+          src="https://images.pexels.com/photos/13038776/pexels-photo-13038776.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          alt="Nigerian women in elegant purple aso-ebi lace outfits"
           fetchpriority="high"
         />
       </div>
@@ -50,7 +50,7 @@ export default function Hero({ introDone }) {
             <polygon className="needle" points="598,3 605,8 598,13" />
           </svg>
         </div>
-        <p className="hero-tagline">Stitched to fit. <em>Made to stand out.</em></p>
+        <p className="hero-tagline">For women only. <em>Stitched to stand out.</em></p>
         <div className="hero-cta">
           <a href="#order" className="btn btn-gold magnetic">Book a Fitting</a>
         </div>
