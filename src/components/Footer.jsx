@@ -1,4 +1,5 @@
 import { STUDIO, BRAND_NAME, waLink } from "../lib/site";
+
 import Logo from "./Logo";
 
 /* Footer with studio details and socials */
@@ -24,6 +25,7 @@ export default function Footer() {
           <h4>Studio</h4>
           <ul>
             <li>{STUDIO.address}</li>
+            <li><a className="link-line" href={'mailto:' + STUDIO.email}>{STUDIO.email}</a></li>
             <li>{STUDIO.hours}</li>
             <li>Sunday · Closed</li>
           </ul>

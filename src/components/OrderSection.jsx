@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BRAND_NAME, waLink } from "../lib/site";
+import { BRAND_NAME, STUDIO, waLink } from "../lib/site";
 
 const OUTFIT_TYPES = [
   "Corset / Lace Gown", "Aso Ebi (Owambe)", "Boubou / Kaftan", "George Wrapper Set",
@@ -46,7 +46,8 @@ export default function OrderSection() {
           </h2>
           <p>For women only. Fill in your details and we will continue the conversation on WhatsApp — fabric suggestions, pricing and your fitting date.</p>
           <hr className="gold-rule" />
-          <p>Prefer to talk now? <a className="link-line" href={waLink("Hello " + BRAND_NAME + ", I'd like to make an enquiry.")} target="_blank" rel="noopener">Message the studio →</a></p>
+          <p>Prefer to talk now? <a className="link-line" href={waLink("Hello " + BRAND_NAME + ", I'd like to make an enquiry.")} target="_blank" rel="noopener">Message the studio on WhatsApp →</a></p>
+          <p>Or email the studio: <a className="link-line" href={"mailto:" + STUDIO.email}>{STUDIO.email}</a></p>
         </div>
         <form className="order-form" onSubmit={handleSubmit} noValidate>
           <div className="field">

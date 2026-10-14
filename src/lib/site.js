@@ -6,6 +6,7 @@ export const WHATSAPP_NUMBER = "2348035900687"; // your number, international fo
 
 // Optional studio details shown in the footer / menu (change freely)
 export const STUDIO = {
+  email: "tomiwakumuyi1@gmail.com",   // buyers can email you here
   instagram: "https://instagram.com", // replace with your Instagram URL
   tiktok: "https://tiktok.com",       // replace with your TikTok URL
   address: "12 Adeola Odeku Street, Victoria Island, Lagos",

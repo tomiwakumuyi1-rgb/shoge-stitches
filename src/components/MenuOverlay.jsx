@@ -73,6 +73,7 @@ export default function MenuOverlay({ open, onClose }) {
         </ul>
       </nav>
       <div className="menu-meta">
+        <a href={"mailto:" + STUDIO.email}>{STUDIO.email}</a>
         <a href={waLink("Hello SHOGE STITCHES, I'd like to make an enquiry.")} target="_blank" rel="noopener">WhatsApp</a>
         <a href={STUDIO.instagram} target="_blank" rel="noopener">Instagram</a>
         <a href={STUDIO.tiktok} target="_blank" rel="noopener">TikTok</a>
